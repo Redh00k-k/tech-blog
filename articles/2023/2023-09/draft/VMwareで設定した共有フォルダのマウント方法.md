@@ -1,0 +1,27 @@
+# 経緯
+VMware WorkstationにおいてホストOSとゲストOS間で共有フォルダを設定しているが、ゲストOS再起動後は共有フォルダへのリンクが切れてしまう。
+VMware WorkstationのGUIで再度共有フォルダ設定をしてもよいが、面倒なのでCUIだけで対応したい。
+
+# 前提
+- VMware Workstationの「設定」 → 「オプション」 →  「共有フォルダ」で共有フォルダの設定済み
+- ゲストOSにvmware toolsをインストール済み
+
+# 対応方法
+まずは、設定した共有フォルダを認識しているのか確認する。
+私の場合、ホストOS上のworkというフォルダを共有しているので、`vmware-hgfsclient`コマンドによってworkと表示された。
+```
+$ ls /mnt/hgfs          # リンクが切れているので、共有フォルダが表示されない
+$ vmware-hgfsclient
+work
+```
+
+`vmhgfs-fuse`コマンドを使って、共有フォルダをマウントする。
+```
+$ sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other,uid=1000    # 他ユーザーへのアクセスを許可、uidが1000のユーザーをownerに
+$ ls /mnt/hgfs
+work
+```
+
+# 参考
+- https://askubuntu.com/questions/29284/how-do-i-mount-shared-folders-in-ubuntu-using-vmware-tools
+- https://usskim.blog.fc2.com/blog-entry-764.html
