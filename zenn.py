@@ -31,6 +31,10 @@ markdown_files = [
     os.path.join(root, file)
     for root, _, files in os.walk("articles")
     for file in files
+<<<<<<< HEAD
+=======
+    if "draft" in file:continue
+>>>>>>> 525fb0251f8d448a8b169ff28580d9ae723a57a6
     if file.endswith(".md")
 ]
 
@@ -119,7 +123,10 @@ os.makedirs("books", exist_ok=True)
 with open("books/.keep", "w") as f:
     f.write("")
 
+<<<<<<< HEAD
 # commitする
 # now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 # os.system("git add .")
 # os.system(f'git commit -m "Publish to Zenn at {now}"')
+=======
+>>>>>>> 525fb0251f8d448a8b169ff28580d9ae723a57a6
